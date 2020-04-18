@@ -1,0 +1,20 @@
+{
+  "name": "portal-noticias",
+  "version": "1.0.0",
+  "description": "treinamento",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon ./src/index.js"
+  },
+  "author": "Luiz R",
+  "license": "ISC",
+  "dependencies": {
+    "celebrate": "^12.1.0",
+    "express": "^4.17.1",
+    "knex": "^0.20.15",
+    "sqlite3": "^4.1.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.3"
+  }
+}

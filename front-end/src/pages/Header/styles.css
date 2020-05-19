@@ -1,0 +1,75 @@
+.headerPage {
+    background-color: rgb(34, 32, 30);
+    height: 9vh;
+}
+
+/* ** */
+
+.headerContainer {
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+}
+
+.headerContainer img {
+    height: 80px;
+    width: 80px;
+    margin-left: 22px;
+}
+
+.headerList ul {
+    display: flex;
+    list-style: none;
+    margin-left: 45%;
+}
+
+.headerList ul li {
+    margin-left: 35px;
+    font-family: sans-serif;
+    font-size: 18px;
+    /* color: white; */
+}
+
+.headerList ul li a {
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+}
+
+.headerList ul li a:hover {
+    color: red;
+}
+
+/* SEARCH BAR */
+
+#divBusca{
+    background-color:#E0EEEE;
+    border:solid 2px #5F9EA0;
+    border-radius:10px;
+    width:300px;
+    height:32px;
+    margin-left: 180%;
+  }
+   
+  #txtBusca{
+    float:left;
+    background-color:transparent;
+    padding-left:5px; 
+    font-size:18px;
+    border:none;
+    height:32px;
+    width:191px;
+  }
+   
+  #btnBusca{
+    border:none;
+    float:right;
+    height:32px;
+    border-radius:0 7px 7px 0;
+    width:70px;
+    font-weight:bold;
+    background:#5F9EA0;
+  }
+   
+
+/* SEARCH BAR */

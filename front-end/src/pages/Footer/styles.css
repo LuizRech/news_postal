@@ -1,0 +1,12 @@
+.footerContainer{
+    background-color: rgb(34, 32, 30);
+    color: white;
+    font-family: sans-serif;
+    font-size: 18px;
+    text-align: center;
+    height: 5vh;
+}
+
+.divFooter{
+    padding-top: 15px;
+}

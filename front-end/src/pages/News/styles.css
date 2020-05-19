@@ -1,0 +1,20 @@
+
+.conteudoNews {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding-top: 55px;
+}
+
+.news {
+    border-top: 1px solid white;
+    border-radius: 5px;
+    background-color: #4592af;
+    color: black;
+    font-family: sans-serif; 
+    width: 100%;
+    margin: 20px 10px;
+    padding-left: 15px;
+    cursor: pointer;
+    text-decoration: none;
+    height: 250px;
+}

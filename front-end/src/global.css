@@ -1,0 +1,13 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+main {
+    height: 86vh;
+    background-color: rgb(16, 23, 27);
+    overflow-y: auto;
+    overflow-x: hidden;
+}

@@ -17,4 +17,9 @@
     cursor: pointer;
     text-decoration: none;
     height: 250px;
+    transition: 0.5s;
+}
+
+.news:hover {
+    background-color: #569cb7;
 }

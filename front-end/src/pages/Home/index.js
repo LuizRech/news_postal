@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import { FiUser, FiClock } from 'react-icons/fi';
+import moment from 'moment';
 
 import './styles.css';
 
@@ -22,13 +24,12 @@ export default function Home(){
         requireNews();
     }, []);
 
-    if(newsHome.length === 5){    
         for(var i=0;i < newsHome.length;i++){
             if(i < 3){
                 conteudoUD.push(
                     <Link
                         key={newsHome[i].id} 
-                        className="linkConteudo" 
+                        className="news" 
                         to={{
                             pathname: "/news_detail",
                             search: "?id="+newsHome[i].id, 
@@ -37,11 +38,11 @@ export default function Home(){
                             }
                         }}
                     >
-                        <div className="conteudo">
-                            <h3>Titulo:{i} </h3>
-                            <p>{newsHome[i].title}</p>
-                            <h3>Resumo: </h3>
-                            <p>{newsHome[i].resume}</p>
+                        <h3>{newsHome[i].title} </h3>
+                        <p>{newsHome[i].resume}</p>
+                        <div className="authorDiv">
+                            <FiUser className="authorIcon" /><span className="authorName">{newsHome[i].author}</span>
+                            <FiClock className="clockIcon" /><span className="clockValue">{moment(new Date(newsHome[i].created_at)).format("DD-MM-YYYY hh:mm")}</span>
                         </div>
                 </Link>
             )
@@ -49,7 +50,7 @@ export default function Home(){
             conteudoTQC.push(
                 <Link
                     key={newsHome[i].id} 
-                    className="linkConteudo" 
+                    className="news" 
                     to={{  
                         pathname: "/news_detail", 
                         search: "?id="+newsHome[i].id+"", 
@@ -58,11 +59,11 @@ export default function Home(){
                         }
                     }}
                 >
-                    <div className="conteudo">
-                        <h3>Titulo:{i} </h3>
-                        <p>{newsHome[i].title}</p>
-                        <h3>Resumo: </h3>
-                        <p>{newsHome[i].resume}</p>
+                    <h3>{newsHome[i].title} </h3>
+                    <p>{newsHome[i].resume}</p>
+                    <div className="authorDiv">
+                        <FiUser className="authorIcon" /><span className="authorName">{newsHome[i].author}</span>
+                        <FiClock className="clockIcon" /><span className="clockValue">{moment(new Date(newsHome[i].created_at)).format("DD-MM-YYYY hh:mm")}</span>
                     </div>
                 </Link>    
             )
@@ -82,7 +83,4 @@ export default function Home(){
 
         </main>
     )
-}else{
-    return <div>Sem conteudo</div>
-}
 }

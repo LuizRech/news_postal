@@ -11,3 +11,52 @@ main {
     overflow-y: auto;
     overflow-x: hidden;
 }
+
+.news {
+    display: grid; /** * **/
+    border-top: 1px solid white;
+    border-radius: 5px;
+    background-color: #4592af;
+    color: black;
+    font-family: sans-serif; 
+    width: 100%;
+    margin: 20px 10px;
+    padding-left: 15px;
+    cursor: pointer;
+    text-decoration: none;
+    height: 250px;
+    transition: 0.5s;
+}
+.news:hover {
+    background-color: #569cb7;
+}
+
+.authorDiv {
+    display: flex;
+    height: 50px;
+}
+
+.authorIcon {
+    color: rgb(88, 86, 86);
+    font-size: 20px;
+    padding-top: 40px;
+}
+
+.authorName {
+    padding-top: 43px;
+    padding-left: 5px;
+    color: rgb(88, 86, 86);
+}
+
+.clockIcon {
+    margin-left: 15px;
+    color: rgb(88, 86, 86);
+    font-size: 20px;
+    padding-top: 40px;
+}
+
+.clockValue {
+    padding-top: 42px;
+    padding-left: 5px;
+    color: rgb(88, 86, 86);
+}

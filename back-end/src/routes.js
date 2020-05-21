@@ -16,9 +16,9 @@ router.get('/news_detail/:id', newsDetailController.newsDetail);
 
 router.post('/create_news', celebrate({
     [Segments.BODY]: Joi.object().keys({
-        title: Joi.string().required().max(30),
-        resume: Joi.string().required().max(50),
-        new_content: Joi.string().required().max(350),
+        title: Joi.string().required().max(100),
+        resume: Joi.string().required().max(150),
+        new_content: Joi.string().required().max(2500),
         author: Joi.string().required().max(25)
     })
 }),  createNewsController.create);

@@ -7,9 +7,20 @@ h1 {
     text-align: center;
 }
 
+.containerDetail {
+    display: grid;
+    height: 85vh;
+    grid-template-rows: 1fr 2fr 1fr;
+}
+
 .content {
     color: white;
     font-size: 17px;
     margin: 55px 135px;
-    
+}
+
+.authorDivv {
+    color: rgb(88, 86, 86);
+    margin-left: 15px;
+    margin-top: 18%;
 }

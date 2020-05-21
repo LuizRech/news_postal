@@ -25,16 +25,16 @@ export default function NewsDetail(props){
     return(
         <main>
           {newsDetail.map(detail =>
-            <>
+            <div className="containerDetail">
                 <h1> {detail.title} </h1>
                 <div className="content">
-                        {detail.new_content}
+                    {detail.new_content}
                 </div>
-                <div className="authorDiv">
-                        <FiUser className="authorIcon" /><span className="authorName">{detail.author}</span>
-                        <FiClock className="clockIcon" /><span className="clockValue">{moment(new Date(detail.created_at)).format("DD-MM-YYYY hh:mm")}</span>
-                    </div>
-            </>
+                <div className="authorDivv">
+                    <FiUser className="authorIcon" /><span className="authorName">{detail.author}</span>
+                    <FiClock className="clockIcon" /><span className="clockValue">{moment(new Date(detail.created_at)).format("DD-MM-YYYY hh:mm")}</span>
+                </div>
+            </div>
           )}  
         </main>
     )

@@ -1,0 +1,15 @@
+* {
+    font-family: sans-serif;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+}
+
+.content {
+    color: white;
+    font-size: 17px;
+    margin: 55px 135px;
+    
+}

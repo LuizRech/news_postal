@@ -24,7 +24,13 @@ export default function News(){
 
         news.map(nNew => 
             conteudo.push(
-                <Link key={nNew.id} className="news" to={{  pathname: "/news_detail", search: "?id="+nNew.id, params: {id: nNew.id}}}>
+                <Link key={nNew.id} className="news"
+                      to={{
+                            pathname: "/news_detail",
+                            search: "?id="+nNew.id 
+                        }}
+                   
+                >
                     <h3>{nNew.title}</h3>
                     <p>{nNew.resume}</p>
                     <div className="authorDiv">

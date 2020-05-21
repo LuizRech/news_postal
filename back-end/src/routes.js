@@ -12,7 +12,7 @@ router.get('/', indexController.listLastFiveNews);
 
 router.get('/news', newsController.listNews);
 
-router.get('/news_detail', newsDetailController.newsDetail);
+router.get('/news_detail/:id', newsDetailController.newsDetail);
 
 router.post('/create_news', celebrate({
     [Segments.BODY]: Joi.object().keys({

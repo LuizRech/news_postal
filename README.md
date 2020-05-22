@@ -1,2 +1,2 @@
 # news_postal
-Treinando tecnologias. Sistema simples de portal de noticias utilizando node no backend, react no front
+Treinando tecnologias. Sistema simples de portal de noticias utilizando node no backend, reactjs no front

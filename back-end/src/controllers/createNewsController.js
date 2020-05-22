@@ -10,7 +10,7 @@ module.exports = {
             new_content: new_content,
             author: author
         }).returning('id').then(function (id) {
-            return response.json("id: "+ id);
+            return response.json({message: 'Notícia publicada com sucesso!'});
         });
     }
 }

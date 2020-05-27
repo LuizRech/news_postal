@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 import './styles.css';
+import './media.css';
 
 import crowley from '../../assets/crowley.png';
 

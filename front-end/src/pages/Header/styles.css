@@ -7,7 +7,6 @@
 
 .headerContainer {
     display: flex;
-    /* justify-content: space-between; */
     align-items: center;
 }
 
@@ -27,7 +26,6 @@
     margin-left: 35px;
     font-family: sans-serif;
     font-size: 18px;
-    /* color: white; */
 }
 
 .headerList ul li a {
